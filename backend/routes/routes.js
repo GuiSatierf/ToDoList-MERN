@@ -2,6 +2,11 @@ const express = require("express");
 const router = express.Router();
 const Task = require("../models/Task");
 
+// GET - Mensagem de status
+router.get("/", (req, res) => {
+  res.json({ message: "Backend funcionando" });
+});
+
 // GET - Buscar todas as tarefas
 router.get("/tasks", async (req, res) => {
   const tasks = await Task.find();
