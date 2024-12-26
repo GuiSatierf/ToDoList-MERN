@@ -1,8 +1,0 @@
-[build]
-  command = "npm run build --prefix frontend"  # Verifique se a pasta 'frontend' está correta.
-  publish = "frontend/build"  # Isso é onde o build otimizado do React será gerado.
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

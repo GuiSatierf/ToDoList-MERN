@@ -10,3 +10,6 @@ li {
   width: 50%;
   margin: 10px auto;
 }
+li .item-top input {
+  margin-right: 15px;
+}
